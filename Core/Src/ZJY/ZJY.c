@@ -191,7 +191,7 @@ uint8_t Get_TIM() {
         uint32_t min_10 = 600000000;
         if      (0    < tim && tim <  820)
             ///test
-            zjy_state.time_of_off  = ((1*min_10)/60)*2; ///10min
+            zjy_state.time_of_off  = 1*min_10; ///10min
         else if (820  < tim && tim <=1639)
             zjy_state.time_of_off  = 2*min_10;
         else if (1639 < tim && tim <=2458)
